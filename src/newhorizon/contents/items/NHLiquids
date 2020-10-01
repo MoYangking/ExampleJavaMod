@@ -1,0 +1,62 @@
+package newHorizon.contents.items;
+
+import arc.graphics.*;
+import mindustry.ctype.*;
+import mindustry.type.*;
+
+public class NHLiquids implements ContentList{
+	
+	//Load Mod Liquids
+	
+	public static Liquid 
+	xenAlpha, 
+	xenBeta,
+	xenGamma,
+	zateFluid,
+	irdryonFluid;
+	
+	@Override
+	public static void load(){
+		xenAlpha = new Liquid("xen-alpha", Color.valueOf("#AEDFFF")){{
+			heatCapacity = 0.3;
+			explosiveness = 1;
+			viscosity = 0.8;
+			temperature = 2;
+		}};
+		
+		
+		xenBeta = new Liquid("xen-beta", Color.valueOf("#CAEEFF")){{
+			heatCapacity = 1.1;
+			explosiveness = 10;
+			viscosity = 0.5;
+			lightColor = Color.valueOf("#CAEEFF");
+		}};
+
+		xenGamma = new Liquid("xen-gamma", Color.valueOf("#CAEEFF")){{
+			heatCapacity = 1.5;
+			explosiveness = 100;
+			viscosity = 0.5;
+			temperature = 0;
+			lightColor = Color.valueOf("#CAEEFF");
+		}};
+
+		zateFluid = new Liquid("zate-fluid", Color.valueOf("#C3FF66")){{
+			heatCapacity = 0.3;
+			explosiveness = 3;
+			viscosity = 0.1;
+			temperature = 0;
+			lightColor = Color.valueOf("#C3FF66");
+		}};
+
+		irdryonFluid = new Liquid("irdryon-fluid", Color.valueOf("#C3FF66")){{
+			heatCapacity = 0;
+			viscosity = 0.8;
+			temperature = 15;
+		}};
+	}
+  
+}
+
+
+
+
