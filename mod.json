@@ -1,0 +1,9 @@
+{
+	"name": "NEWHORIZON",
+	"displayName": "Example Java Mod"
+	"main": "newHorizon.NewHorizon"
+	"author": "[#53ACFF]-YURIA-",
+	"description": "新视界mod交流群:[#FF0900]274584096[]\n服务器地址: m.tiexiu.xyz:30061[#76BEFF]\n请务必将您在平衡，数据方面有关的想法发在群里\n[accent]更新: 解裂者，闪电炮优化，清除者重置，终焉新攻击模式\n\n[#E60010]!非PC玩家需搭配更大炮台底座贴图mod3.0使用! \n\n Support English!"
+	"version":"1.5",
+	"minGameVersion": "105"
+}
