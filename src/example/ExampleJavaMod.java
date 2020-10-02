@@ -22,7 +22,7 @@ public class ExampleJavaMod extends Mod{
     @Override
     public void loadContent(){
 
-        Events.on(ClientLoadEvent.class, e -> {
+        /*Events.on(ClientLoadEvent.class, e -> {
         		Time.runTask(30f, () -> {
         			 try{
         				new TestCustomGameDialog().init();
@@ -36,7 +36,7 @@ public class ExampleJavaMod extends Mod{
         	e5.printStackTrace();
         }
         		});
-        	});
+        	});*/
     }
 
 }
