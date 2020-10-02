@@ -21,7 +21,7 @@ public class ExampleJavaMod extends Mod{
 
     @Override
     public void loadContent(){
-        TEItems.load();
+        new TEItems().load();
 
         /*Events.on(ClientLoadEvent.class, e -> {
         		Time.runTask(30f, () -> {
