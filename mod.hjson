@@ -1,8 +1,8 @@
-name: "example-java-mod"
-displayName: "Example Java Mod"
-author: "Anuke"
-main: "example.ExampleJavaMod"
-description: "A jar mod."
+name: "mxg-java-mod"
+displayName: "Test Java Mod"
+author: "Minxyzgo"
+main: "minxyzgo.Main"
+description: "A test jar mod."
 version: 1.0
-minGameVersion: 105
+minGameVersion: 107
 
