@@ -29,7 +29,7 @@ public class EXMobileInput extends MobileInput{
             checkTargets(worldx, worldy);
         }
         
-        if(!canTapPlayer(worldx, worldy) && !ztileTapped(linked.build)){
+        if(!canTapPlayer(worldx, worldy)){
                 tryBeginTrans(cursor);
         }
         
