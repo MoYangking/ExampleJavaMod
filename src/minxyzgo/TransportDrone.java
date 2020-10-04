@@ -56,7 +56,7 @@ public class TransportDrone extends UnitType{
     	@Override
     	public void update(){
     		super.update();
-    		if(inputb.block.outputsItems() && outputb.block.outputsItems()){
+    		if(inputb != null && outputb != null && inputb.block.outputsItems() && outputb.block.outputsItems()){
     			if(canWork()){
     				
     			}
