@@ -1,4 +1,4 @@
-package example;
+package minxyzgo;
 
 import java.lang.reflect.*;
 import arc.func.*;
