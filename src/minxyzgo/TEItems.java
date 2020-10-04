@@ -1,5 +1,5 @@
-package example;
-import  mindustry.ctype.*;
+package minxzygo;
+import mindustry.ctype.*;
 import arc.graphics.*;
 import mindustry.type.*;
 
