@@ -1,4 +1,4 @@
-package minxzygo;
+package minxyzgo;
 import mindustry.ctype.*;
 import arc.graphics.*;
 import mindustry.type.*;
