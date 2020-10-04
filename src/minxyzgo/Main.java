@@ -11,7 +11,7 @@ import mindustry.ui.dialogs.*;
 import arc.graphics.*;
 import mindustry.ctype.*;
 import mindustry.type.*;
-
+import mindustry.world.blocks.units.UnitFactory;
 
 public class Main extends Mod{
 
@@ -23,7 +23,15 @@ public class Main extends Mod{
     public void loadContent(){
         new TEItems().load();
         InputSetting.set();
-        new TransportDrone("transport-drone");
+        TransportDrone drone = new TransportDrone("transport-drone");
+        new UnitFactory("test-factory"){{
+            requirements(Category.units, ItemStack.with(Items.copper, 60, Items.lead, 70));
+            plans = new UnitPlan[]{
+                new UnitPlan(drone, 60f * 15, ItemStack.with(Items.silicon, 15)),
+            };
+            size = 3;
+            consumes.power(1.2f);
+        }};
         /*Events.on(ClientLoadEvent.class, e -> {
         		Time.runTask(30f, () -> {
         			 try{
