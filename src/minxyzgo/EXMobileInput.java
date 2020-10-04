@@ -86,8 +86,18 @@ public class EXMobileInput extends MobileInput{
     }
     
     public boolean tryBeginTrans(Tile tile){
-        if(player.unit() instanceof TransportDrone.TransportDroneAi){
-            player.miner().mineTile(player.miner().mineTile() == tile ? null : tile);
+    	
+        if(player.unit() instanceof TransportDrone.TransportDroneUnit && tile.build != null && tile.build.block.outputsItems()){
+        	TransportDrone.TransportDroneUnit drone = ((TransportDrone.TransportDroneUnit)player.unit());
+            if(drone.inputb == null){
+            drone.setInput(drone.outputb == tile.build ? null : tile.build);
+            }else if(drone.inputb == tile.build){
+            	drone.setInput(null);
+            }else{
+            	drone.setOutput(tile.build);
+            }
+            
+            
             return true;
         }
         return false;

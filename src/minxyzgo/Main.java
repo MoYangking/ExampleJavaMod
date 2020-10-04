@@ -22,7 +22,8 @@ public class Main extends Mod{
     @Override
     public void loadContent(){
         new TEItems().load();
-
+        InputSetting.set();
+        new TransportDrone("transport-drone");
         /*Events.on(ClientLoadEvent.class, e -> {
         		Time.runTask(30f, () -> {
         			 try{
