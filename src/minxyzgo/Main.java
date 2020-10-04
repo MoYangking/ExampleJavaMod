@@ -1,4 +1,4 @@
-package example;
+package minxyzgo;
 
 import arc.*;
 import arc.util.*;
